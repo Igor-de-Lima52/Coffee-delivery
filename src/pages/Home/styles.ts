@@ -12,11 +12,30 @@ export const HomeContainer = styled.main`
 export const ContentContainer = styled.div`
   grid-area: main;
   overflow-y: auto;
-  padding: 0 2.4rem;
+  padding: 0 2.4rem 5rem;
+
+  &::-webkit-scrollbar{
+    width: 6px;
+  }
+  &::-webkit-scrollbar-thumb{
+    width: 6px;
+    background: ${props => props.theme["gray-300"]};
+    border-radius: 2rem;
+  }
+
   
   @media(min-width: 1280px){
-    padding: 0 16rem;
-  } 
+    padding: 0 16rem 5rem;
+  
+    &::-webkit-scrollbar{
+      width: 10px;
+    }
+    &::-webkit-scrollbar-thumb{
+      width: 10px;
+      background: ${props => props.theme["gray-300"]};
+      border-radius: 2rem;
+    }
+  }
 `;
 
 export const InfoContainer = styled.section`
@@ -104,68 +123,21 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const TopicsContainer = styled.div`
-  display: grid;
-  grid-template-rows: repeat(4, 1fr);
-  gap: 1rem;
-  margin-top: 2rem;
-  justify-content: space-between;
-
-  > div{
-    display: flex;
-    align-items: center;
-    gap: 1.2rem;
-    color: ${props => props.theme["gray-500"]};
-    font-size: 1.6rem;
-  }
-
-  @media (min-width: 768px){
-    grid-template-columns: auto auto;
-    gap: 2rem;
-    margin-top: 4rem;
-  }
-  @media (min-width: 1024px){
-    margin-top: 6.6rem;
-  }
-`;
-
-const BaseContainer = styled.div`
-  width: 3.2rem;
-  height: 3.2rem;
-  border-radius: 50%;
-  color: ${props => props.theme.white};
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
-export const ShoppingContainer = styled(BaseContainer)`
-  background: ${props => props.theme["yellow-dark"]};
-`;
-
-export const PackageContainer = styled(BaseContainer)`
-  background: ${props => props.theme["gray-500"]};
-`;
-
-export const ClockContainer = styled(BaseContainer)`
-  background: ${props => props.theme.yellow};
-`;
-
-export const CoffeeContainer = styled(BaseContainer)`
-  background: ${props => props.theme.purple};
-`;
-
 export const MenuContainer = styled.section`
   width: 100%;
+  margin-top: 4rem;
+
   > h2{
     font-family: "Baloo 2", sans-serif;
     font-size: 2.8rem;
     line-height: 100%;
     font-weight: 800;
-    color: ${props => props.theme["gray-700"]}
+    color: ${props => props.theme["gray-700"]};
   }
 
   @media (min-width: 1024px){
+    margin-top: 0;
+
     > h2{
       font-size: 3.2rem;
       line-height: 130%;

@@ -5,8 +5,13 @@ export const CoffeeItemContainer = styled.div`
   background: ${props => props.theme["white-400"]};
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  border-radius: 6px 36px 6px 36px;
+
+  > img{
+    border-radius: 50%;
+    margin: -2rem 0 1.2rem;
+  }
 `;
 
 export const TagsContainer = styled.div`
@@ -48,5 +53,37 @@ export const TextContainer = styled.div`
     > p{
       line-height: 130%;
     }
+  }
+`;
+
+export const PriceAndCartContainer = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  margin-top: 3.6rem;
+
+  > div:last-child{
+    display: flex;
+    gap: .8rem;
+  }
+`;
+
+export const PriceContainer = styled.div`
+  display: flex;
+  gap: .2rem;
+  align-items: flex-end;
+  line-height: 130%;
+  color: ${props => props.theme["gray-900"]};
+  
+  span:first-child{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+  }
+
+  span:last-child{
+    font-family: "Baloo 2", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 800;
   }
 `;
