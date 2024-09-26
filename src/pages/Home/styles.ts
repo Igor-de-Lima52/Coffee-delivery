@@ -2,14 +2,6 @@ import styled from "styled-components";
 
 export const HomeContainer = styled.main`
   width: 100%;
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 10.4rem auto;
-  grid-template-areas: "header" "main";
-  overflow-y: hidden;
-`;
-
-export const ContentContainer = styled.div`
   grid-area: main;
   overflow-y: auto;
   padding: 0 2.4rem 5rem;
