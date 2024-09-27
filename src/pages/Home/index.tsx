@@ -1,7 +1,7 @@
 import coffee from "../../assets/coffee.svg";
 import { HomeContainer, InfoContainer, MenuContainer, TextContainer } from "./styles";
 import { Topics } from "./components/Topics";
-import { CoffeeList } from "./components/CoffeeList";
+import { CoffeeList } from "../../components/CoffeeList";
 
 export function Home(){
   return(
