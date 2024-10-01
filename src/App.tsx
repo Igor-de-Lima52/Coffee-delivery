@@ -12,7 +12,7 @@ export function App() {
       <BrowserRouter>
         <CoffeesContextProvider>
           <Router/>
-        </CoffeesContextProvider>        
+        </CoffeesContextProvider>
       </BrowserRouter>
       <GlobalStyle/>
     </ThemeProvider>

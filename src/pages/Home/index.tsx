@@ -9,15 +9,15 @@ export function Home(){
       <InfoContainer>
         <div>
           <TextContainer>
-            <h1>Encontre o café perfeito para qualquer hora do dia</h1>
-            <p>Com o Coffee Delivery você recebe seu café onde estiver, a qualquer hora</p>
+            <h1>Find the perfect coffee for any time of the day</h1>
+            <p>With the Coffee Delivery you receive your coffee wherever you are, anytime</p>
           </TextContainer>
           <Topics />
         </div>
         <img src={coffee} />
       </InfoContainer>
       <MenuContainer>
-        <h2>Nossos cafés</h2>
+        <h2>Our coffees</h2>
         <CoffeeList/>
       </MenuContainer>
     </HomeContainer>

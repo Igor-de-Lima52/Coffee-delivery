@@ -1,8 +1,15 @@
 import logo from "../../assets/logo.svg";
 import { MapPin, ShoppingCart } from "phosphor-react";
 import { ActionsContainer, HeaderContainer } from "./styles";
+import { useNavigate } from "react-router-dom";
 
 export function Header(){
+  const navigate = useNavigate();
+
+  function handleGoToCart(){
+    navigate("/cart");
+  }
+
   return(
     <HeaderContainer>
       <img 
@@ -12,9 +19,9 @@ export function Header(){
       <ActionsContainer>
         <button>
           <MapPin weight="fill" size={22}/>
-          Porto Alegre, RS
+          New York, NY
         </button>
-        <button>
+        <button onClick={handleGoToCart}>
           <ShoppingCart weight="fill" size={22}/>
         </button>
       </ActionsContainer>

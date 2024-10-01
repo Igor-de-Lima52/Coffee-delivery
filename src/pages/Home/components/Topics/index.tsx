@@ -8,25 +8,25 @@ export function Topics(){
         <ShoppingContainer>
           <ShoppingCart weight="fill" size={18}/>
         </ShoppingContainer>
-        Compra simples e segura
+        Simple and safe purchase
       </div>
       <div>
         <PackageContainer>
           <Package weight="fill" size={18}/>
         </PackageContainer>
-        Embalagem mantém o café intacto
+        Packaging keeps coffee intact
       </div>
       <div>
         <ClockContainer>
           <Timer weight="fill" size={18} />
         </ClockContainer>
-        Entrega rápida e rastreada
+        Fast and tracked delivery
       </div>
       <div>
         <CoffeeContainer>
           <Coffee weight="fill" size={18} />
         </CoffeeContainer>
-        O café chega fresquinho até você
+        The coffee arrives fresh to you
       </div>
     </TopicsContainer>
   );

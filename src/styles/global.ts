@@ -13,10 +13,15 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
     font-weight: 400;
+    
+    &:focus{
+      outline: 1px solid ${props => props.theme["yellow-dark"]};
+    }
   }
   body{
     background: ${props => props.theme["white-200"]};
     color: ${props => props.theme["gray-300"]};
     -webkit-font-smoothing: antialiased;
   }
-`;
+  
+  `;

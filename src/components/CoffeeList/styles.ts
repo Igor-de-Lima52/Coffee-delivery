@@ -93,7 +93,7 @@ export const PriceContainer = styled.div`
   
   span:first-child{
     font-family: "Roboto", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     font-weight: 400;
   }
 

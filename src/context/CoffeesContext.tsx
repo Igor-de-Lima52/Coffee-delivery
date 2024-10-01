@@ -45,7 +45,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: traditionalEspresso,
         title: "Traditional Espresso",
         description: "The traditional coffee made with hot water and ground grains",
-        price: 9.90,
+        price: 3.00,
         tags: ["Traditional"],
       },
       {
@@ -53,7 +53,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: americanEspresso,
         title: "Expresso Americano",
         description: "Diluted espresso, less intense than the traditional",
-        price: 9.90,
+        price: 3.50,
         tags: ["Traditional"],
       },
       {
@@ -61,7 +61,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: creamyEspresso,
         title: "Creamy espresso",
         description: "Traditional espresso with creamy foam",
-        price: 9.90,
+        price: 4.00,
         tags: ["Traditional"],
       },
       {
@@ -69,7 +69,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: icedEspresso,
         title: "Iced Espresso",
         description: "Drink prepared with espresso coffee and ice cubes",
-        price: 9.90,
+        price: 4.50,
         tags: ["Traditional", "Iced"],
       },
       {
@@ -77,7 +77,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: coffeeWithMilk,
         title: "Coffee with milk",
         description: "Half and half traditional espresso with streamed milk",
-        price: 9.90,
+        price: 4.00,
         tags: ["Traditional", "With milk"],
       },
       {
@@ -85,7 +85,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: latte,
         title: "Latte",
         description: "A shot of espresso coffee with double the milk and creamy foam",
-        price: 9.90,
+        price: 4.50,
         tags: ["Traditional", "With milk"],
       },
       {
@@ -93,7 +93,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: cappuccino,
         title: "Cappuccino",
         description: "Cinnamon drink made from equals parts coffee, milk and foam",
-        price: 9.90,
+        price: 4.50,
         tags: ["Traditional", "With milk"],
       },
       {
@@ -101,7 +101,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: macchiato,
         title: "Macchiato",
         description: "Espresso mixed with a little hot milk and foam",
-        price: 9.90,
+        price: 4.75,
         tags: ["Traditional", "With milk"],
       },
       {
@@ -109,7 +109,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: mochaccino,
         title: "Mochaccino",
         description: "Espresso with chocolate syrup, a little milk and foam",
-        price: 9.90,
+        price: 5.00,
         tags: ["Traditional", "With milk"],
       },
       {
@@ -117,7 +117,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: hotChocolate,
         title: "Hot Chocolate",
         description: "Drink made with chocolate disolved in hot milk and coffee",
-        price: 9.90,
+        price: 4.00,
         tags: ["Special", "With milk"],
       },
       {
@@ -125,7 +125,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: cuban,
         title: "Cuban",
         description: "Iced espresso drink with rum, cream and mint",
-        price: 9.90,
+        price: 4.25,
         tags: ["Special", "Alcoholic", "Iced"],
       },
       {
@@ -133,7 +133,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: hawaiian,
         title: "Hawaiian",
         description: "Sweet drink made with coffee and coconut milk",
-        price: 9.90,
+        price: 5.50,
         tags: ["Special"],
       },
       {
@@ -141,7 +141,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: arabic,
         title: "Arabic",
         description: "Drink made with arabic coffee beans and spices",
-        price: 9.90,
+        price: 5.00,
         tags: ["Special"],
       },
       {
@@ -149,7 +149,7 @@ export function CoffeesContextProvider({ children }: CoffeeContextProviderProps)
         imageUrl: irish,
         title: "Irish",
         description: "Drink made coffee, irish whiskey, sugar and whipped cream",
-        price: 9.90,
+        price: 6.00,
         tags: ["Special", "Alcoholic"],
       }
     ]
