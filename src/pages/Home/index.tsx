@@ -1,7 +1,9 @@
 import coffee from "../../assets/coffee.svg";
 import { HomeContainer, InfoContainer, MenuContainer, TextContainer } from "./styles";
 import { Topics } from "./components/Topics";
-import { CoffeeList } from "../../components/CoffeeList";
+import { Card } from "../../components/Card";
+
+import { coffees } from "../../../data.json";
 
 export function Home(){
   return(
@@ -18,7 +20,11 @@ export function Home(){
       </InfoContainer>
       <MenuContainer>
         <h2>Our coffees</h2>
-        <CoffeeList/>
+        <div>
+        {coffees.map(coffee => (
+          <Card key={coffee.id} coffee={coffee}/>
+        ))}
+        </div>
       </MenuContainer>
     </HomeContainer>
   )

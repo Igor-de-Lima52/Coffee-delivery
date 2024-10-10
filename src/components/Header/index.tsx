@@ -6,8 +6,9 @@ import { useNavigate } from "react-router-dom";
 export function Header(){
   const navigate = useNavigate();
 
-  function handleGoToCart(){
-    navigate("/cart");
+
+  function handleNavigate(route: string){
+    navigate(`/${route}`);
   }
 
   return(
@@ -15,13 +16,14 @@ export function Header(){
       <img 
         src={logo} 
         alt="Um copo de café roxo com uma escrita do lado direito dizendo Coffee Delivery" 
+        onClick={() => handleNavigate("")}
       />
       <ActionsContainer>
         <button>
           <MapPin weight="fill" size={22}/>
           New York, NY
         </button>
-        <button onClick={handleGoToCart}>
+        <button onClick={() => handleNavigate("cart")}>
           <ShoppingCart weight="fill" size={22}/>
         </button>
       </ActionsContainer>

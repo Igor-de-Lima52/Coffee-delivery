@@ -17,7 +17,7 @@ export const HomeContainer = styled.main`
 
   
   @media(min-width: 1280px){
-    padding: 0 16rem 5rem;
+    padding: 0 15rem 5rem;
   
     &::-webkit-scrollbar{
       width: 10px;
@@ -127,12 +127,36 @@ export const MenuContainer = styled.section`
     color: ${props => props.theme["gray-700"]};
   }
 
+  > div{
+    width: 100%;
+    margin-top: 5rem;
+    display: grid;
+    gap: 3.2rem;
+  }
+
+  @media(min-width: 524px){
+    > div{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   @media (min-width: 1024px){
     margin-top: 0;
+
+    > div{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.4rem;
+    }
 
     > h2{
       font-size: 3.2rem;
       line-height: 130%;
+    }
+  }
+  @media(min-width: 1280px){
+    > div{
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3.2rem;
     }
   }
 `;

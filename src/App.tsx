@@ -3,16 +3,16 @@ import { defaultTheme } from './styles/themes/default';
 import { GlobalStyle } from './styles/global';
 import { Router } from './Router';
 import { BrowserRouter } from 'react-router-dom';
-import { CoffeesContextProvider } from './context/CoffeesContext';
+import { CartContextProvider } from './context/CartProvider';
 
 
 export function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
       <BrowserRouter>
-        <CoffeesContextProvider>
+        <CartContextProvider>
           <Router/>
-        </CoffeesContextProvider>
+        </CartContextProvider>
       </BrowserRouter>
       <GlobalStyle/>
     </ThemeProvider>

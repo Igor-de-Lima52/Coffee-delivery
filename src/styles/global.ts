@@ -15,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 400;
     
     &:focus{
-      outline: 1px solid ${props => props.theme["yellow-dark"]};
+      outline: 0;
     }
   }
   body{

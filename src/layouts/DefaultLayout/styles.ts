@@ -7,7 +7,7 @@ export const LayoutContainer = styled.div`
   grid-template-rows: 10.4rem auto;
   grid-template-areas: "header" "main";
   overflow-y: hidden;
-  
+
   @media(min-width: 768px){
     padding: 0 3rem;
   }

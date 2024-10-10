@@ -9,8 +9,11 @@ export const HeaderContainer = styled.header`
   align-items: center;
   padding: 2.4rem;
 
+  img{
+    cursor: pointer;
+  }
+
   @media (min-width: 768px){
-    justify-content: space-between;
     padding: 3.2rem 0;
   }
   
@@ -22,7 +25,7 @@ export const HeaderContainer = styled.header`
 export const ActionsContainer = styled.div`
   display: flex;
   gap: 1.2rem;
-  
+
   button{
     cursor: pointer;
   }
