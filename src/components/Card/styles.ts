@@ -1,26 +1,27 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  background: ${props => props.theme["white-400"]};
-  padding: 0 2rem 2rem;
+  background: ${props => props.theme["base-card"]};
+  padding: 0 1.2rem 2rem;
   border-radius: 6px 36px;
   height: 31rem;
   display: flex;
   flex-direction: column;
   text-align: center;
+  position: relative;
 
   > h3{
     font-family: "Baloo 2", sans-serif;
     font-size: 2rem;
     font-weight: 600;
     margin-top: 1.6rem;
-    color: ${props => props.theme["gray-700"]};
+    color: ${props => props.theme["base-subtitle"]};
   }
 
   > span{
     margin-top: .8rem;
     width: 100%;
-    color: ${props => props.theme["gray-300"]};
+    color: ${props => props.theme["base-label"]};
     font-size: 1.4rem;
     line-height: 100%;
     text-align: center;
@@ -54,17 +55,18 @@ export const TagsContainer = styled.div`
 `;
 
 export const ControlContainer = styled.div`
+  width: 90%;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  margin-top: 3.2rem;
+  position: absolute;
+  bottom: 2rem;
 `;
 
 export const PriceContainer = styled.div`
   display: flex;
   align-items: baseline;
   gap: 2px;
-  color: ${props => props.theme["gray-900"]};
+  color: ${props => props.theme["base-title"]};
 
   span:first-child{
     font-family: "Roboto", sans-serif;

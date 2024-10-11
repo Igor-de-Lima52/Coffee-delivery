@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const QuantityContainer = styled.div`
   padding: .8rem;
-  background: ${props => props.theme["white-800"]};
+  background: ${props => props.theme["base-button"]};
   border-radius: 6px;
   display: flex;
   gap: .8rem;
@@ -26,6 +26,6 @@ export const QuantityContainer = styled.div`
 
   > span{
     padding-top: .2rem;
-    color: ${props => props.theme["gray-900"]};
+    color: ${props => props.theme["base-title"]};
   }
 `;

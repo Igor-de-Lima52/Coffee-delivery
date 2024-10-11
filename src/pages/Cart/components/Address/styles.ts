@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const AddressContainer = styled.div`
   width: 100%;
   padding: 2rem;
-  background: ${props => props.theme["white-400"]};
+  background: ${props => props.theme["base-card"]};
   border-radius: 6px;
   margin-top: 1.5rem;
 
@@ -24,13 +24,13 @@ export const AddressHeading = styled.div`
     margin-bottom: 2px;
     font-size: 1.6rem;
     line-height: 130%;
-    color: ${props => props.theme["gray-700"]};
+    color: ${props => props.theme["base-subtitle"]};
   }
 
   p{
     font-size: 1.4rem;
     line-height: 130%;
-    color: ${props => props.theme["gray-500"]};
+    color: ${props => props.theme["base-text"]};
   }
 
 `;

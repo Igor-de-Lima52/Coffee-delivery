@@ -3,10 +3,12 @@ import React, {
   HTMLAttributes, 
   InputHTMLAttributes, 
   LegacyRef, 
+  useContext, 
   useState 
 } from "react";
 import { FieldError } from "react-hook-form";
 import { BoxContainer, ErrorMessageContainer, TextInputContainer } from "./styles";
+import { ThemeContext } from "../../../context/ThemeContext";
 
 type TextInputProps = InputHTMLAttributes<HTMLInputElement> & {
   optional?: boolean;
@@ -18,6 +20,8 @@ export const TextInput = forwardRef(function TextInput(
   { optional, error, containerProps, onFocus, onBlur, ...rest }: TextInputProps,
   ref: LegacyRef<HTMLInputElement>,
   ){
+    const { isThemeLightOn } = useContext(ThemeContext);
+
     const [isFocused, setIsFocused] = useState(false);
 
     function handleFocus(event: React.FocusEvent<HTMLInputElement>){
@@ -31,7 +35,7 @@ export const TextInput = forwardRef(function TextInput(
 
     return(
       <BoxContainer {...containerProps}>
-        <TextInputContainer data-state={isFocused ? "focused" : "blurred"}>
+        <TextInputContainer data-state={isFocused ? "focused" : "blurred"} isthemelighton={isThemeLightOn ? isThemeLightOn : undefined}>
           <input 
             type="text"
             onFocus={handleFocus}

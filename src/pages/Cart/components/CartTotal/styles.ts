@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const CartTotalContainer = styled.div`
   width: 100%;
   padding: 2rem;
-  background: ${props => props.theme["white-400"]};
+  background: ${props => props.theme["base-card"]};
   border-radius: 6px 36px;
   margin-top: 1.5rem;
 
@@ -12,7 +12,7 @@ export const CartTotalContainer = styled.div`
     width: 100%;
     height: 1px;
     margin: 24px 0;
-    background: ${props => props.theme["white-800"]};
+    background: ${props => props.theme["base-button"]};
   }
 
   @media(width < 350px){
@@ -44,7 +44,7 @@ export const Coffee = styled.div`
       > span{
         font-size: 1.6rem;
         line-height: 130%;
-        color: ${props => props.theme["gray-700"]};
+        color: ${props => props.theme["base-subtitle"]};
       }
     }
   }
@@ -53,7 +53,7 @@ export const Coffee = styled.div`
     font-size: 1.6rem;
     line-height: 130%;
     font-weight: bold;
-    color: ${props => props.theme["gray-500"]};
+    color: ${props => props.theme["base-text"]};
   }
 
   @media(width < 365px){
@@ -69,7 +69,7 @@ export const CoffeeInfo = styled.div`
 
   > button{
     padding: .8rem;
-    background: ${props => props.theme["white-800"]};
+    background: ${props => props.theme["base-button"]};
     display: flex;
     gap: .4rem;
     align-items: center;
@@ -85,7 +85,7 @@ export const CoffeeInfo = styled.div`
   > button span{
     text-transform: uppercase;
     font-size: 1.2rem;
-    color: ${props => props.theme["gray-500"]};
+    color: ${props => props.theme["base-text"]};
   }
 `;
 
@@ -99,7 +99,7 @@ export const CartTotalInfo = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    color: ${props => props.theme["gray-500"]};
+    color: ${props => props.theme["base-text"]};
     line-height: 130%;
 
     > span:first-child{
@@ -112,7 +112,7 @@ export const CartTotalInfo = styled.div`
   }
 
   > div:last-child{
-    color: ${props => props.theme["gray-700"]};
+    color: ${props => props.theme["base-subtitle"]};
 
     > span{
       font-size: 2rem;

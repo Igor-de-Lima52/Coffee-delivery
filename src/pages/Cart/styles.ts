@@ -9,7 +9,7 @@ export const CartContainer = styled.main`
   }
   &::-webkit-scrollbar-thumb{
     width: 6px;
-    background: ${props => props.theme["gray-300"]};
+    background: ${props => props.theme["base-label"]};
     border-radius: 2rem;
   }
 
@@ -38,7 +38,7 @@ export const CartContainer = styled.main`
     }
     &::-webkit-scrollbar-thumb{
       width: 10px;
-      background: ${props => props.theme["gray-300"]};
+      background: ${props => props.theme["base-label"]};
       border-radius: 2rem;
     }
   }
@@ -56,7 +56,7 @@ export const InfoContainer = styled.div`
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 130%;
-    color: ${props => props.theme["gray-700"]};
+    color: ${props => props.theme["base-subtitle"]};
   }
 
   > form{

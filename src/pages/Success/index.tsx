@@ -3,8 +3,12 @@ import { Info, InfoContainer, LocalContainer, PaymentContainer, SuccessContainer
 import { useCart } from "../../hooks/useCart";
 import { CurrencyDollar, MapPin, Timer } from "phosphor-react";
 import delivery from "../../assets/delivery.svg";
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export function Success(){
+  const { isThemeLightOn } = useContext(ThemeContext);
+
   const { orders } = useCart();
 
   const { orderId } = useParams();
@@ -28,7 +32,7 @@ export function Success(){
 
       <div>
         <Info>
-          <InfoContainer>
+          <InfoContainer isthemelighton={isThemeLightOn ? isThemeLightOn : undefined}>
             <TopicContainer>
               <LocalContainer>
                 <MapPin size={16} weight="fill"/>

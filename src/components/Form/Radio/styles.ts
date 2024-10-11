@@ -1,6 +1,10 @@
 import styled from "styled-components";
 
-export const RadioContainer = styled.label`
+export interface ThemeLightProps{
+  isthemelighton?: boolean;
+}
+
+export const RadioContainer = styled.label<ThemeLightProps>`
   padding: 1.6rem;
   width: 100%;
   display: flex;
@@ -8,8 +12,8 @@ export const RadioContainer = styled.label`
   gap: 1.2rem;
   border-radius: 6px;
   border: 1px solid transparent;
-  background: ${props => props.theme["white-800"]};
-  color: ${props => props.theme["gray-500"]};
+  background: ${props => props.isthemelighton ? props.theme["base-button"]: props.theme["base-hover"]};
+  color: ${props => props.theme["base-text"]};
   text-transform: uppercase;
   font-size: 1.2rem;
   line-height: 160%;
@@ -17,10 +21,10 @@ export const RadioContainer = styled.label`
   cursor: pointer;
 
   &:hover{
-    background: ${props => props.theme["gray-100"]};
+    background: ${props => props.theme["base-hover"]};
   }
   &[data-state="true"]{
-    background: ${props => props.theme["purple-light"]};
+    background: ${props => props.isthemelighton ? props.theme["purple-light"]: props.theme["base-button"]};
     border: 1px solid ${props => props.theme.purple};
   }
   input{

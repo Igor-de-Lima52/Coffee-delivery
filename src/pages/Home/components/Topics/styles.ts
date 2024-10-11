@@ -11,7 +11,7 @@ export const TopicsContainer = styled.div`
     display: flex;
     align-items: center;
     gap: 1.2rem;
-    color: ${props => props.theme["gray-500"]};
+    color: ${props => props.theme["base-text"]};
     font-size: 1.6rem;
   }
 
@@ -40,7 +40,7 @@ export const ShoppingContainer = styled(BaseContainer)`
 `;
 
 export const PackageContainer = styled(BaseContainer)`
-  background: ${props => props.theme["gray-500"]};
+  background: ${props => props.theme["base-text"]};
 `;
 
 export const ClockContainer = styled(BaseContainer)`

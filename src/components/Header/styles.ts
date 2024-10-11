@@ -46,12 +46,23 @@ export const ActionsContainer = styled.div`
     }
   }
 
-  button:last-child{
+  button:nth-child(2){
     background: ${props => props.theme["yellow-light"]};
     color: ${props => props.theme["yellow-dark"]};
     border: 0;
     line-height: 0;
     padding: .8rem;
     border-radius: 6px;
+  }
+
+  button:last-child{
+    background: ${props => props.theme["purple-light"]};
+    color: ${props => props.theme["purple-dark"]};
+    border: 0;
+    line-height: 0;
+    padding: 1rem;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
   }
 `;

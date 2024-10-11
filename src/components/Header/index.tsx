@@ -1,11 +1,14 @@
 import logo from "../../assets/logo.svg";
-import { MapPin, ShoppingCart } from "phosphor-react";
+import { MapPin, Moon, ShoppingCart, Sun } from "phosphor-react";
 import { ActionsContainer, HeaderContainer } from "./styles";
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import { ThemeContext } from "../../context/ThemeContext";
 
 export function Header(){
-  const navigate = useNavigate();
+  const { isThemeLightOn, toggleTheme } = useContext(ThemeContext);
 
+  const navigate = useNavigate();
 
   function handleNavigate(route: string){
     navigate(`/${route}`);
@@ -25,6 +28,9 @@ export function Header(){
         </button>
         <button onClick={() => handleNavigate("cart")}>
           <ShoppingCart weight="fill" size={22}/>
+        </button>
+        <button onClick={toggleTheme}>
+          {isThemeLightOn ? <Moon/> : <Sun/>}
         </button>
       </ActionsContainer>
     </HeaderContainer>   

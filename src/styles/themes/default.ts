@@ -7,15 +7,15 @@ export const defaultTheme = {
   "purple": "#8047F8",
   "purple-light": "#EBE5F9",
 
-  "gray-900": "#272221",
-  "gray-700": "#403937",
-  "gray-500": "#574F4D",
-  "gray-300": "#8D8686",
-  "gray-100": "#D7D5D5",
+  "base-title": "#272221",
+  "base-subtitle": "#403937",
+  "base-text": "#574F4D",
+  "base-label": "#8D8686",
+  "base-hover": "#D7D5D5",
   
-  "white-800": "#E6E5E5",
-  "white-600": "#EDEDED",
-  "white-400": "#F3F2F2",
-  "white-200": "#FAFAFA",
+  "base-button": "#E6E5E5",
+  "base-input": "#EDEDED",
+  "base-card": "#F3F2F2",
+  "background": "#FAFAFA",
   "white": "#FFF"
 }

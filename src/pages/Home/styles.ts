@@ -11,7 +11,7 @@ export const HomeContainer = styled.main`
   }
   &::-webkit-scrollbar-thumb{
     width: 6px;
-    background: ${props => props.theme["gray-300"]};
+    background: ${props => props.theme["base-label"]};
     border-radius: 2rem;
   }
 
@@ -24,7 +24,7 @@ export const HomeContainer = styled.main`
     }
     &::-webkit-scrollbar-thumb{
       width: 10px;
-      background: ${props => props.theme["gray-300"]};
+      background: ${props => props.theme["base-label"]};
       border-radius: 2rem;
     }
   }
@@ -69,14 +69,14 @@ export const TextContainer = styled.div`
     font-size: 3.2rem;
     font-weight: 800;
     line-height: 110%;
-    color: ${props => props.theme["gray-900"]};
+    color: ${props => props.theme["base-title"]};
     margin-top: 3rem;
   }
 
   > p{
     margin-top: 1.4rem;
     font-size: 1.8rem;
-    color: ${props => props.theme["gray-700"]}
+    color: ${props => props.theme["base-subtitle"]}
   }
   @media(width < 420px){
     > h1{
@@ -124,7 +124,7 @@ export const MenuContainer = styled.section`
     font-size: 2.8rem;
     line-height: 100%;
     font-weight: 800;
-    color: ${props => props.theme["gray-700"]};
+    color: ${props => props.theme["base-subtitle"]};
   }
 
   > div{

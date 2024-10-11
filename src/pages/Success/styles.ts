@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { ThemeLightProps } from "../../components/Form/Radio/styles";
 
 export const SuccessContainer = styled.main`
   width: 100%;
@@ -15,7 +16,7 @@ export const SuccessContainer = styled.main`
   }
   
   > p{
-    color: ${props => props.theme["gray-700"]};
+    color: ${props => props.theme["base-subtitle"]};
     font-size: 2rem;
     line-height: 130%;
     margin-bottom: 4rem;
@@ -78,12 +79,12 @@ export const Info = styled.div`
   }
 `;
 
-export const InfoContainer = styled.div`
+export const InfoContainer = styled.div<ThemeLightProps>`
   padding: 2.6rem;
   display: flex;
   flex-direction: column;
   gap: 3.2rem;
-  background: ${props => props.theme.white};
+  background: ${props => props.isthemelighton ? props.theme.white : props.theme["background"]};
   border-radius: 6px 36px;
 
   @media(min-width: 768px){
@@ -94,7 +95,7 @@ export const InfoContainer = styled.div`
 export const TopicContainer = styled.div`
   display: flex;
   gap: 1.2rem;
-  color: ${props => props.theme["gray-500"]};
+  color: ${props => props.theme["base-text"]};
 
   > div{
     font-size: 1.2rem;
