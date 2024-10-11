@@ -2,7 +2,7 @@
   "coffees": [
     {
       "id": 1,
-      "imageUrl": "./src/assets/traditionalEspresso.svg",
+      "imageUrl": "./public/traditionalEspresso.svg",
       "title": "Traditional Espresso",
       "description": "The traditional coffee made with hot water and ground grains",
       "price": 3.00,
