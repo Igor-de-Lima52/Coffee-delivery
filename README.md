@@ -34,9 +34,9 @@ To configure the development environment, follow the steps below:
 
 1. Clone the repository:
 
-   ```bash
-   git clone https://github.com/Igor-de-Lima/coffee-delivery.git
-   ```
+```bash
+git clone https://github.com/Igor-de-Lima/coffee-delivery.git
+```
 
 2. Install the project dependencies:
 ```bash
