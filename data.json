@@ -2,7 +2,7 @@
   "coffees": [
     {
       "id": 1,
-      "imageUrl": "./public/traditionalEspresso.svg",
+      "imageUrl": "/assets/traditionalEspresso.svg",
       "title": "Traditional Espresso",
       "description": "The traditional coffee made with hot water and ground grains",
       "price": 3.00,
@@ -10,7 +10,7 @@
     },
     {
       "id": 2,
-      "imageUrl": "./src/assets/americanEspresso.svg",
+      "imageUrl": "/assets/americanEspresso.svg",
       "title": "American Espresso",
       "description": "Diluted espresso, less intense than the traditional",
       "price": 3.50,
@@ -18,7 +18,7 @@
     },
     {
       "id": 3,
-      "imageUrl": "./src/assets/creamyEspresso.svg",
+      "imageUrl": "/assets/creamyEspresso.svg",
       "title": "Creamy espresso",
       "description": "Traditional espresso with creamy foam",
       "price": 4.00,
@@ -26,7 +26,7 @@
     },
     {
       "id": 4,
-      "imageUrl": "./src/assets/icedEspresso.svg",
+      "imageUrl": "/assets/icedEspresso.svg",
       "title": "Iced Espresso",
       "description": "Drink prepared with espresso coffee and ice cubes",
       "price": 4.50,
@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "imageUrl": "./src/assets/coffeeWithMilk.svg",
+      "imageUrl": "/assets/coffeeWithMilk.svg",
       "title": "Coffee with milk",
       "description": "Half and half traditional espresso with streamed milk",
       "price": 4.00,
@@ -42,7 +42,7 @@
     },
     {
       "id": 6,
-      "imageUrl": "./src/assets/latte.svg",
+      "imageUrl": "/assets/latte.svg",
       "title": "Latte",
       "description": "A shot of espresso coffee with double the milk and creamy foam",
       "price": 4.50,
@@ -50,7 +50,7 @@
     },
     {
       "id": 7,
-      "imageUrl": "./src/assets/cappuccino.svg",
+      "imageUrl": "/assets/cappuccino.svg",
       "title": "Cappuccino",
       "description": "Cinnamon drink made from equals parts coffee, milk and foam",
       "price": 4.50,
@@ -58,7 +58,7 @@
     },
     {
       "id": 8,
-      "imageUrl": "./src/assets/macchiato.svg",
+      "imageUrl": "/assets/macchiato.svg",
       "title": "Macchiato",
       "description": "Espresso mixed with a little hot milk and foam",
       "price": 4.75,
@@ -66,7 +66,7 @@
     },
     {
       "id": 9,
-      "imageUrl": "./src/assets/mochaccino.svg",
+      "imageUrl": "/assets/mochaccino.svg",
       "title": "Mochaccino",
       "description": "Espresso with chocolate syrup, a little milk and foam",
       "price": 5.00,
@@ -74,7 +74,7 @@
     },
     {
       "id": 10,
-      "imageUrl": "./src/assets/hotChocolate.svg",
+      "imageUrl": "/assets/hotChocolate.svg",
       "title": "Hot Chocolate",
       "description": "Drink made with chocolate disolved in hot milk and coffee",
       "price": 4.00,
@@ -82,7 +82,7 @@
     },
     {
       "id": 11,
-      "imageUrl": "./src/assets/cuban.svg",
+      "imageUrl": "/assets/cuban.svg",
       "title": "Cuban",
       "description": "Iced espresso drink with rum, cream and mint",
       "price": 4.25,
@@ -90,7 +90,7 @@
     },
     {
       "id": 12,
-      "imageUrl": "./src/assets/hawaiian.svg",
+      "imageUrl": "/assets/hawaiian.svg",
       "title": "Hawaiian",
       "description": "Sweet drink made with coffee and coconut milk",
       "price": 5.50,
@@ -98,7 +98,7 @@
     },
     {
       "id": 13,
-      "imageUrl": "./src/assets/arabic.svg",
+      "imageUrl": "/assets/arabic.svg",
       "title": "Arabic",
       "description": "Drink made with arabic coffee beans and spices",
       "price": 5.00,
@@ -106,7 +106,7 @@
     },
     {
       "id": 14,
-      "imageUrl": "./src/assets/irish.svg",
+      "imageUrl": "/assets/irish.svg",
       "title": "Irish",
       "description": "Drink made coffee, irish whiskey, sugar and whipped cream",
       "price": 6.00,
