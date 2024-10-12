@@ -12,7 +12,7 @@ type ThemeContextType = {
 export const ThemeContext = createContext({} as ThemeContextType);
 
 export function ThemeContextProvider({ children }: ThemeContextProps) {
-  const [isThemeLightOn, setIsThemeLightOn] = useState(false);
+  const [isThemeLightOn, setIsThemeLightOn] = useState(true);
   
   function toggleTheme(){
     setIsThemeLightOn(state => !state);
