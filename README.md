@@ -70,4 +70,4 @@ The main features from Coffee Delivery includes:
 - Remove Coffee: Remove itens from the cart.
 - Finalize Order: Finalize the order filling out the information and submitting.
 
-<a href="https://coffeelivery.netlify.app/">You can see the project here</a>
+<a href="https://coffeelivery.netlify.app/" target="_blank">You can see the project here</a>
