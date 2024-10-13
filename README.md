@@ -69,3 +69,5 @@ The main features from Coffee Delivery includes:
 - Increment and decrement: Adjust the quantity of coffees selected directly in the cart.
 - Remove Coffee: Remove itens from the cart.
 - Finalize Order: Finalize the order filling out the information and submitting.
+
+<a href="https://coffeelivery.netlify.app/">You can see the project here</a>
