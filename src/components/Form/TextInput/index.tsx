@@ -9,6 +9,7 @@ import React, {
 import { FieldError } from "react-hook-form";
 import { BoxContainer, ErrorMessageContainer, TextInputContainer } from "./styles";
 import { ThemeContext } from "../../../context/ThemeContext";
+import { texts } from "./language";
 
 type TextInputProps = InputHTMLAttributes<HTMLInputElement> & {
   optional?: boolean;
@@ -43,7 +44,7 @@ export const TextInput = forwardRef(function TextInput(
             ref={ref}
             {...rest}
           />
-          {optional ? <span>Opcional</span> : null}
+          {optional ? <span>{texts.span}</span> : null}
         </TextInputContainer>
         {error?.message ? (
           <ErrorMessageContainer role="alert">{error.message}</ErrorMessageContainer>

@@ -1,5 +1,6 @@
 import { Coffee, Package, ShoppingCart, Timer } from "phosphor-react";
 import { ClockContainer, CoffeeContainer, PackageContainer, ShoppingContainer, TopicsContainer } from "./styles";
+import { texts } from "./language";
 
 export function Topics(){
   return(
@@ -8,25 +9,25 @@ export function Topics(){
         <ShoppingContainer>
           <ShoppingCart weight="fill" size={18}/>
         </ShoppingContainer>
-        Simple and safe purchase
+        {texts.shopping}
       </div>
       <div>
         <PackageContainer>
           <Package weight="fill" size={18}/>
         </PackageContainer>
-        Packaging keeps coffee intact
+        {texts.package}
       </div>
       <div>
         <ClockContainer>
           <Timer weight="fill" size={18} />
         </ClockContainer>
-        Fast and tracked delivery
+        {texts.clock}
       </div>
       <div>
         <CoffeeContainer>
           <Coffee weight="fill" size={18} />
         </CoffeeContainer>
-        The coffee arrives fresh to you
+        {texts.coffee}
       </div>
     </TopicsContainer>
   );

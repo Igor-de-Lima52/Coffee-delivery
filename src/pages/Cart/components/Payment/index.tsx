@@ -2,6 +2,7 @@ import { Bank, CreditCard, CurrencyDollar, Money } from "phosphor-react";
 import { Radio } from "../../../../components/Form/Radio";
 import { PaymentContainer, PaymentErrorMessage, PaymentHeading, PaymentOptions } from "./styles";
 import { FieldError, useFormContext } from "react-hook-form";
+import { texts } from "./language";
 
 const getFieldError = (error: any): FieldError | undefined => {
   return error && "type" in error ? (error as FieldError): undefined;
@@ -19,8 +20,8 @@ export function Payment(){
       <PaymentHeading>
         <CurrencyDollar size={22}/>
         <div>
-          <span>Payment</span>
-          <p>The payment is made on delivery. Choose the way you wish pay</p>
+          <span>{texts.span}</span>
+          <p>{texts.paragraph}</p>
         </div>
       </PaymentHeading>
       <PaymentOptions>
@@ -31,7 +32,7 @@ export function Payment(){
             value="credit"
           >
             <CreditCard size={16}/>
-            <span>Credit card</span>
+            <span>{texts.credit}</span>
           </Radio>
           <Radio 
             isSelected={selectedPaymentMethod === "debit"}
@@ -39,7 +40,7 @@ export function Payment(){
             value="debit"
           >
             <Bank size={16}/>
-            <span>Debit card</span>
+            <span>{texts.debit}</span>
           </Radio>
           <Radio 
             isSelected={selectedPaymentMethod === "cash"}
@@ -47,7 +48,7 @@ export function Payment(){
             value="cash"
           >
             <Money size={16}/>
-            <span>Cash</span>
+            <span>{texts.cash}</span>
           </Radio>
         </div>
           {errors.paymentMethod && (

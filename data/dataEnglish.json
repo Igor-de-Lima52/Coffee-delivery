@@ -36,7 +36,7 @@
       "id": 5,
       "imageUrl": "/assets/coffeeWithMilk.svg",
       "title": "Coffee with milk",
-      "description": "Half and half traditional espresso with streamed milk",
+      "description": "Half and half traditional espresso with steamed milk",
       "price": 4.00,
       "tags": ["Traditional", "With milk"]
     },
@@ -52,7 +52,7 @@
       "id": 7,
       "imageUrl": "/assets/cappuccino.svg",
       "title": "Cappuccino",
-      "description": "Cinnamon drink made from equals parts coffee, milk and foam",
+      "description": "Cinnamon drink made from equal parts coffee, milk and foam",
       "price": 4.50,
       "tags": ["Traditional", "With milk"]
     },
@@ -76,7 +76,7 @@
       "id": 10,
       "imageUrl": "/assets/hotChocolate.svg",
       "title": "Hot Chocolate",
-      "description": "Drink made with chocolate disolved in hot milk and coffee",
+      "description": "Drink made with chocolate dissolve in hot milk and coffee",
       "price": 4.00,
       "tags": ["Special", "With milk"]
     },
@@ -108,7 +108,7 @@
       "id": 14,
       "imageUrl": "/assets/irish.svg",
       "title": "Irish",
-      "description": "Drink made coffee, irish whiskey, sugar and whipped cream",
+      "description": "Drink made with coffee, irish whiskey, sugar and whipped cream",
       "price": 6.00,
       "tags": ["Special", "Alcoholic"]
     }

@@ -1,4 +1,4 @@
-import { createContext, ReactNode, useState } from "react";
+import { createContext, ReactNode, useEffect, useState } from "react";
 
 interface ThemeContextProps {
   children: ReactNode;
@@ -12,11 +12,26 @@ type ThemeContextType = {
 export const ThemeContext = createContext({} as ThemeContextType);
 
 export function ThemeContextProvider({ children }: ThemeContextProps) {
-  const [isThemeLightOn, setIsThemeLightOn] = useState(true);
+  const themeStateAsJSON = localStorage.getItem("@coffee-delivery:theme-state-1.0.0")
+  const stateStored = JSON.parse(themeStateAsJSON!)
+  
+  const [isThemeLightOn, setIsThemeLightOn] = useState<boolean>(stateStored);
   
   function toggleTheme(){
     setIsThemeLightOn(state => !state);
   }
+
+  useEffect(() => {
+    const stateJSON = JSON.stringify(isThemeLightOn);
+
+    localStorage.setItem("@coffee-delivery:theme-state-1.0.0", stateJSON);
+  }, [isThemeLightOn])
+
+  useEffect(() => {
+    
+
+    
+  }, [])
 
   return(
     <ThemeContext.Provider value={{ isThemeLightOn, toggleTheme }}>

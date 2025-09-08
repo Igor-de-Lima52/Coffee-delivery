@@ -11,6 +11,7 @@ import { Check, ShoppingCart } from "phosphor-react";
 
 import { QuantityInput } from "../Form/QuantityInput";
 import { useCart } from "../../hooks/useCart";
+import { coin } from "./language";
 
 type CardProps = {
   coffee:{
@@ -76,7 +77,7 @@ export function Card({ coffee }: CardProps){
       <span>{coffee.description}</span>
       <ControlContainer>
         <PriceContainer>
-          <span>$</span>
+          <span>{coin}</span>
           <span>{coffee.price.toFixed(2)}</span>
         </PriceContainer>
         <OrderContainer>

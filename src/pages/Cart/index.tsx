@@ -9,6 +9,7 @@ import { Address } from "./components/Address";
 import { Payment } from "./components/Payment";
 import { useCart } from "../../hooks/useCart";
 import { CartTotal } from "./components/CartTotal";
+import { texts } from "./language";
 
 type FormInputs = {
   zipCode: string;
@@ -35,7 +36,7 @@ export function Cart(){
   
   const handleOrderCheckout: SubmitHandler<FormInputs> = data => {
     if(cart.length === 0){
-      return alert("You need to have a minimum one coffee added in the cart");
+      return alert(texts.alert);
     }
 
     checkout(data);
@@ -45,14 +46,14 @@ export function Cart(){
     <CartContainer>
       <FormProvider {...dataForm}>
         <InfoContainer>
-          <h3>Complete your order</h3>
+          <h3>{texts.subtitle1}</h3>
           <form id="order" onSubmit={handleSubmit(handleOrderCheckout)}>
             <Address />
             <Payment />
           </form>
         </InfoContainer>
         <InfoContainer>
-          <h3>Selected Coffees</h3>
+          <h3>{texts.subtitle2}</h3>
           <CartTotal formId="order" />
         </InfoContainer>
       </FormProvider>

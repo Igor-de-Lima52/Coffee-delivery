@@ -2,6 +2,7 @@ import { MapPinLine } from "phosphor-react";
 import { TextInput } from "../../../../components/Form/TextInput";
 import { AddressContainer, AddressForm, AddressHeading, InputWrapper } from "./styles";
 import { FieldError, useFormContext } from "react-hook-form";
+import { placeholders, texts } from "./language";
 
 export function Address(){
   const { register, formState: {errors}} = useFormContext();
@@ -15,34 +16,34 @@ export function Address(){
       <AddressHeading>
         <MapPinLine size={22}/>
         <div>
-          <span>Delivery Address</span>
-          <p>Type your address where you would like to receive your order </p>
+          <span>{texts.span}</span>
+          <p>{texts.paragraph}</p>
         </div>
       </AddressHeading>
       <AddressForm>
         <TextInput 
-          placeholder="Zip Code"
+          placeholder={placeholders.zipCode}
           type="text"
           containerProps={{ style: {gridArea: "zipCode"}}}
           error={getFieldError(errors.zipCode)}
           {...register("zipCode")}
         />
         <TextInput 
-          placeholder="Street"
+          placeholder={placeholders.street}
           containerProps={{ style: {gridArea: "street"}}}
           error={getFieldError(errors.street)}
           {...register("street")}
         />
         <InputWrapper>
           <TextInput 
-            placeholder="Number"
+            placeholder={placeholders.number}
             type="number"
             containerProps={{ style: {gridArea: "number"}}}
             error={getFieldError(errors.number)}
             {...register("number", {valueAsNumber: true})}
           />
           <TextInput 
-            placeholder="Complement"
+            placeholder={placeholders.complement}
             optional
             containerProps={{ style: {gridArea: "complement"}}}
             error={getFieldError(errors.complement)}
@@ -51,20 +52,20 @@ export function Address(){
         </InputWrapper>
         <InputWrapper>
           <TextInput 
-            placeholder="Neighborhood"
+            placeholder={placeholders.neighborhood}
             containerProps={{ style: {gridArea: "neighborhood"}}}
             error={getFieldError(errors.neighborhood)}
             {...register("neighborhood")}
           />
           <div className="city">
             <TextInput 
-              placeholder="City"
+              placeholder={placeholders.city}
               containerProps={{ style: {gridArea: "city"}}}
               error={getFieldError(errors.city)}
               {...register("city")}
             />
             <TextInput 
-              placeholder="State"
+              placeholder={placeholders.state}
               maxLength={2}
               containerProps={{ style: {gridArea: "state"}}}
               error={getFieldError(errors.state)}

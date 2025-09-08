@@ -3,7 +3,8 @@ import { HomeContainer, InfoContainer, MenuContainer, TextContainer } from "./st
 import { Topics } from "./components/Topics";
 import { Card } from "../../components/Card";
 
-import { coffees } from "../../../data.json";
+import { products } from "../../../data";
+import { texts } from "./language";
 
 export function Home(){
   return(
@@ -11,18 +12,18 @@ export function Home(){
       <InfoContainer>
         <div>
           <TextContainer>
-            <h1>Find the perfect coffee for any time of the day</h1>
-            <p>With the Coffee Delivery you receive your coffee wherever you are, anytime</p>
+            <h1>{texts.title}</h1>
+            <p>{texts.paragraph}</p>
           </TextContainer>
           <Topics />
         </div>
         <img src={coffee} />
       </InfoContainer>
       <MenuContainer>
-        <h2>Our coffees</h2>
+        <h2>{texts.subtitle}</h2>
         <div>
-        {coffees.map(coffee => (
-          <Card key={coffee.id} coffee={coffee}/>
+        {products.map(product => (
+          <Card key={product.id} coffee={product}/>
         ))}
         </div>
       </MenuContainer>
